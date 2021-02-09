@@ -1,4 +1,4 @@
-package com.glance.artbet.ui.notifications
+package com.glance.artbet.ui.fragments.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
