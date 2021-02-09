@@ -2,6 +2,7 @@ package com.glance.artbet.ui.base
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.view.Gravity
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
