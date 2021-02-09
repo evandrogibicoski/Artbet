@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authorization"
+    app:startDestination="@+id/splash_screen">
+
+    <activity
+        android:id="@+id/splash_screen"
+        android:name="com.glance.artbet.ui.activities.splash.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash">
+
+        <deepLink
+            android:id="@+id/test_deep_link"
+            app:uri="testnavigationapp/splash?screenIndex={screenIndex}"/>
+
+    </activity>
+
+</navigation>
