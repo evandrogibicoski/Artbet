@@ -3,4 +3,16 @@
     <string name="title_home">Latest</string>
     <string name="title_dashboard">Auctions</string>
     <string name="title_notifications">Profile</string>
+
+    <string name="error_click_operation">Click operation error!</string>
+    <string name="error_no_internet_connection">Check internet connection</string>
+    <string name="error_converting_data">Data converting error</string>
+
+    <string name="text_try_again">Try again</string>
+
+    <string name="error_connection">
+        Oops! You don\’t seem to be connected to the internet. Please check your connection and try again.
+        \n
+        \nYou\’ll be able to use the app again as soon as you have a connection.
+    </string>
 </resources>

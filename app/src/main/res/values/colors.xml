@@ -5,5 +5,16 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorRed">#E04A48</color>
+    <color name="colorGreen">#067952</color>
+    <color name="colorPink">#FA70A8</color>
 
+    <color name="colorWarmGray1">#F2F2F4</color>
+    <color name="colorWarmGray4">#9B9CAB</color>
+
+    <color name="colorButtonDefaultBackground">@color/colorPink</color>
+
+    <color name="colorTutorialBackground">@color/colorWarmGray1</color>
+
+    <color name="colorBlackOp15">#26000000</color>
 </resources>

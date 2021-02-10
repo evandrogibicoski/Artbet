@@ -7,6 +7,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.androidadvance.topsnackbar.TSnackbar
 import com.glance.artbet.ArtbetApp
 import com.glance.artbet.R
 import com.glance.artbet.di.components.ActivityComponent
@@ -22,6 +24,10 @@ import com.glance.artbet.mvvm.BaseViewModel
 import com.glance.artbet.ui.listeners.*
 import com.glance.artbet.ui.models.TransitionAnimationStatus
 import com.glance.artbet.utils.ActionDebounceFilter
+import com.glance.artbet.utils.extensions.android.findViewAt
+import com.glance.artbet.utils.extensions.android.getColorRes
+import com.glance.artbet.utils.extensions.android.hideKeyboard
+import com.glance.artbet.utils.extensions.android.showKeyboard
 import com.jakewharton.rxbinding2.view.RxView
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
@@ -181,7 +187,7 @@ abstract class BaseActivity<V : BaseViewModel> : AppCompatActivity(),
     }
 
     override fun showToast(message: String) {
-        if (::toast.isInitialized && toast.view.windowVisibility == View.VISIBLE)
+        if (::toast.isInitialized && toast.view!!.windowVisibility == View.VISIBLE)
             toast.cancel()
         toast = Toast.makeText(this, message, Toast.LENGTH_LONG)
         toast.show()

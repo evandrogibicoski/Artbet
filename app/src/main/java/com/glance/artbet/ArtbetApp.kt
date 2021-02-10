@@ -7,8 +7,11 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.ProcessLifecycleOwner
+import com.glance.artbet.data.local_storage.LocalStorageRepository
 import com.glance.artbet.di.components.AppComponent
+import com.glance.artbet.di.components.DaggerAppComponent
 import com.glance.artbet.di.modules.AppModule
+import com.glance.artbet.di.modules.RetrofitApiModule
 
 class ArtbetApp : Application(), LifecycleObserver {
     companion object {
